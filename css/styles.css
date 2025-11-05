@@ -1,0 +1,194 @@
+/*seccion de header*/
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1100px;
+}
+
+body{
+    margin: 0;
+    background-color: #FAE1F4;
+    font-family: "roboto", sans-serif;
+}
+
+.container-fluid{
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+body header{
+    background-color:#FFB3B8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center
+}
+
+body header nav ul{
+    text-align: right;
+    list-style: none;
+}
+
+body header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+/* seccion de main html*/
+
+main h1{
+    color: #000d;
+    text-align: center;
+
+}
+
+main .img-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 13px;
+}
+
+main p{
+    text-align: center;
+    color: #FFB3B8;
+}
+
+main p span{
+    color: #000;
+}
+
+.contacto p, .mejores-vendidos p, .mas-sobre-nosotros p, .ayuda p {
+    color: #000;
+    text-align: left;
+}
+
+/* seccion de main, de productos.html */
+main h1{
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+main h2{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+main .perfumes, main .shampoos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* seccion de main, de informacion.html */
+main .contacto p, main .mejores-vendidos p, main .mas-sobre-nosotros p, main .ayuda p{
+    text-align: center;
+}
+
+/*seccion secundaria (section) */
+
+section h2{
+    color: #000D;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+section .productos{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+    
+    margin-top: 1rem;
+}
+
+section .producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+section .descubre{
+    margin-top: 0.3rem;
+    padding: 0.4rem 0.7rem;
+}
+
+section .producto button{
+    width: 100%;
+}
+section button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+section button{
+    background-color: #FFB3B8;
+    border: 1px solid black;
+}
+
+/*seccion de footer*/
+
+footer h3{
+    margin: 10%;
+    text-align: center;
+    color: #000d;
+}
+
+
+/* adaptacion media queries tablet */
+@media screen and (min-width:768px){
+    main .img-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    resize: both;
+    object-fit: cover;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    margin-right: 500px;
+}
+}
+
+
+/* adaptacion media queries mobile */
+@media screen and (max-width:500px)
+{
+    .container-fluid{
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .icon{
+    display: flex;
+    flex-direction: row;
+    margin-right: 290px;
+}
+    body{
+        background-color:#FAE1F4;
+    }
+    body header{
+        background-color:#FFB3B8;
+    }
+main .img-1{
+    width: 46%
+}
+section .productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+    margin-top: 1rem;
+}
+section .producto img, section .producto button{
+    width: 150%;
+    font-size: 1.3rem
+}
+}
