@@ -2,3 +2,9 @@
 @use "base/reset" as *;
 // home
 @use "pages/home" as *;
+// informacion
+@use "pages/informacion" as *;
+//
+@use "pages/productos" as *;
+// media queries
+@use "utilities/mediaqueries" as *;

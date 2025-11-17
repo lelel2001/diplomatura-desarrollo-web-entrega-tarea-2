@@ -1,0 +1,19 @@
+//variables
+@use "../utilities/variables" as *;
+/* INFORMACION.HTML - Seccion de Main */
+main {
+.container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.contacto,
+.mejores-vendidos,
+.mas-sobre-nosotros,
+.ayuda {
+    p {
+    text-align: center;
+        }
+    }
+}

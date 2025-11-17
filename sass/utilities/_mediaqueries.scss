@@ -1,0 +1,67 @@
+// media queries
+
+// Adaptacion tablet
+@media screen and (max-width: 900px) {
+    main {
+    .img-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        object-fit: cover;
+        overflow: hidden;
+        margin: 0;
+    }
+    .shampoos,
+    .perfumes {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 0;
+        gap: 0;
+        justify-items: center;
+        }
+    }
+.productos {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 0;
+    gap: 0;
+    justify-items: center;
+    }
+}
+
+// Adaptacion mobile
+@media screen and (max-width: 600px) {
+    body {
+    background-color: #FAE1F4;
+
+    header {
+        background-color: #FFB3B8;
+    }
+}
+main {
+    .img-1 {
+    margin: 0;
+    }
+    .shampoos,
+    .perfumes {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+    .contacto h2,
+    .mas-sobre-nosotros h2,
+    .ayuda h2 {
+    padding-top: 3rem;
+    }
+}
+.productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+main{
+.container{
+    grid-template-columns: 1fr;
+    }
+}
+}
