@@ -1,0 +1,10 @@
+//sin parametros
+
+@mixin header{
+    background-color:#FFB3B8;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+}
+

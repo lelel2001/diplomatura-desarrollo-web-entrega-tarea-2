@@ -1,0 +1,113 @@
+//variables
+@use "../utilities/variables" as *;
+// mixin
+@use "../utilities/mixin" as *;
+/*Seccion de Header*/
+
+.navbar{
+    background-color: $rosa-header !important;
+    padding: 0.2rem;
+}
+
+.navbar .navbar-toggler{
+    background-color: $blanco;
+}
+
+body{
+    margin: 0;
+    background-color: $rosa-fondo;
+    font-family: "roboto", sans-serif;
+}
+
+header{
+    background-color: $rosa-header;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+    nav{
+        ul{
+    text-align: right;
+    list-style: none;
+    li{
+        a{text-decoration: none;
+    color: $blanco;
+    font-size: 20px;
+    margin-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+/* INDEX.HTML - Seccion de Main*/
+
+main{
+    h1{
+    color: $gris-texto;
+    text-align: center;
+    }
+    .img-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 13px;
+    }
+    .img-1:hover{
+    filter: brightness(1.1);
+    transition: 0.08 linear;
+    }
+    p{
+    text-align: center;
+    color: $rosa-header;
+    }
+    span{
+    color: $gris-texto;
+}
+}
+
+.contacto,
+.mejores-vendidos,
+.mas-sobre-nosotros,
+.ayuda {
+p {
+    color: #000;
+    text-align: left;
+}
+}
+
+/* INDEX.HTML - Seccion de Main*/
+
+main{
+    h1{
+    color: #333333;
+    text-align: center;
+    }
+    .img-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 13px;
+    &:hover {
+        filter: brightness(1.1);
+        transition: 0.08s linear;
+        }
+    }
+p {
+    text-align: center;
+    color: #FFB3B8;
+    span {
+    color: #333333;
+        }
+    }
+}
+
+.contacto,
+.mejores-vendidos,
+.mas-sobre-nosotros,
+.ayuda {
+p {
+    color: #000;
+    text-align: left;
+}
+}
