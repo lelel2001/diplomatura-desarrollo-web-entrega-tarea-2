@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrega 3</title>
+    <title>Entrega final</title>
 
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,45 +18,70 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
+<!-- seccion body -->
 
 <body>
-    <!-- Seccion de Header -->
-    <header>
     <!-- header de boostrap -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-<div class="container-fluid">
+    <header>
+<nav class="navbar navbar-expand-lg navbar-light bg-$rosa-header">
+<div class="container-fluid" alt="seccion de encabezado">
 
     <!-- LOGO -->
-    <a class="navbar-brand" href="#">
-    <img src="./img/logo_Melon-de-Azucar.png" alt="logo" ">
+    <a class="navbar-brand" href="index.html">
+    <img src="./img/logo_Melon-de-Azucar.png" alt="logo de melon de azucar">
     </a>
 
     <!-- BOTÓN HAMBURGUESA -->
-    <button class="navbar-toggler ms-auto" 
+    <button class="navbar-toggler ms-auto " 
     type="button"
     data-bs-toggle="collapse"
-    data-bs-target="#navbarNav">
+    data-bs-target="#navbarNav" alt="boton hamburguesa">
     <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- MENÚ -->
     <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="html/productos.html">Productos</a></li>
-        <li class="nav-item"><a class="nav-link" href="html/informacion.html">Información</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html" alt="boton de inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="html/productos.html" alt="boton de productos">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="html/informacion.html" alt="boton de informacion">Información</a></li>
     </ul>
     </div>
-
 </div>
 </nav>
     </header>
 
-    <!-- Seccion Main / Banner-->
-    <main>
-        <h1>Imperdibles</h1>
-        <div class="img-1"><img src="./img/banner_perfume.jpg" alt="imagen principal de un perfume"></div>
-        <p>o <span>o o</span> </p>
+<!-- Seccion Main / Banner de boostrap-->
+
+<main>
+    <h1>¡Imperdibles!</h1>
+        <div id="carouselExampleIndicators" class="carousel slide">
+<div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div id="carouselExample" class="carousel slide">
+<div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="img/natura-banner.jpg" class="d-block w-100" alt="imagen de banner 1">
+    </div>
+    <div class="carousel-item">
+    <img src="img/natura-banner-2.jpg" class="d-block w-100" alt="imagen de banner 2">
+    </div>
+    <div class="carousel-item">
+    <img src="img/natura-banner-3.jpg" class="d-block w-100" alt="imagen de banner">
+    </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+</div>
     </main>
     
     <!-- Seccion secundaria (Section / Mas Vendidos) -->
@@ -65,48 +90,47 @@
         <h2>Mas Vendidos</h2>
             <div class="productos">
                 <div class="producto">
-                <img src="./img/img_essencial-unico-masculino.jpg" alt="imagen de esencial unico masculino">
-            <a class="descubre" href="./html/productos.html">Descubre</a>
+                <img src="./img/img-nat-21.jpg" alt="imagen de esencial unico masculino">
+            <a class="descubre" href="./html/productos.html" alt="descubre">Descubre</a>
             </div>
             <div class="producto">
-                <img src="./img/img_essencial-unico.jpg" alt="imagen de esencial unico femenino">
-                <a class="descubre" href="./html/productos.html">Descubre</a>
+                <img src="./img/img-nat-22.jpg" alt="imagen de esencial exclusivo">
+                <a class="descubre" href="./html/productos.html" alt="descubre">Descubre</a>
             </div>
             <div class="producto">
-                <img src="./img/img_kaiak.jpg" alt="imagen de kaiak aventura">
-                <a class="descubre" href="./html/productos.html">Descubre</a>
+                <img src="./img/img-nat-23.jpg" alt="imagen de kaiak aventura">
+                <a class="descubre" href="./html/productos.html" alt="descubre">Descubre</a>
             </div>
             <div class="producto">
-                <img src="./img/IMG-NAT-1.jpg" alt="imagen de kaiak aventura">
-                <a class="descubre" href="./html/productos.html">Descubre</a>
+                <img src="./img/IMG-NAT-1.jpg" alt="imagen de kaiak urbe">
+                <a class="descubre" href="./html/productos.html" alt="descubre">Descubre</a>
             </div>
             <div class="producto">
-                <img src="./img/IMG-NAT-2.jpg" alt="imagen de kaiak aventura">
-                <a class="descubre" href="./html/productos.html">Descubre</a>
+                <img src="./img/IMG-NAT-2.jpg" alt="imagen de kaiak oceano">
+                <a class="descubre" href="./html/productos.html" alt="descubre">Descubre</a>
             </div>
             <div class="producto">
-                <img src="./img/IMG-NAT-3.jpg" alt="imagen de kaiak aventura">
-                <a class="descubre" href="./html/productos.html">Descubre</a>
+                <img src="./img/IMG-NAT-3.jpg" alt="imagen de kaiak clasico">
+                <a class="descubre" href="./html/productos.html" alt="descubre">Descubre</a>
             </div>
             <div class="producto">
-                <img src="./img/IMG-NAT-4.jpg" alt="imagen de kaiak aventura">
-                <a class="descubre" href="./html/productos.html">Descubre</a>
+                <img src="./img/IMG-NAT-4.jpg" alt="imagen de krisca">
+                <a class="descubre" href="./html/productos.html" alt="descubre">Descubre</a>
             </div>
             <div class="producto">
-                <img src="./img/IMG-NAT-5.jpg" alt="imagen de kaiak aventura">
-                <a class="descubre" href="./html/productos.html">Descubre</a>
+                <img src="./img/IMG-NAT-5.jpg" alt="imagen de body splash">
+                <a class="descubre" href="./html/productos.html" alt="descubre">Descubre</a>
             </div>
             <div class="producto">
-                <img src="./img/IMG-NAT-6.jpg" alt="imagen de kaiak aventura">
-                <a class="descubre" href="./html/productos.html">Descubre</a>
+                <img src="./img/IMG-NAT-6.jpg" alt="imagen de humor primero">
+                <a class="descubre" href="./html/productos.html" alt="descubre">Descubre</a>
             </div>
             </div>
     </section>
 
-    <!-- Seccion terciaria (Otro Section) -->
     <!-- seccion final (footer) -->
     <footer>
-        <h3>©Copyright 2025 - Melon de Azucar</h3>
+        <h3>©Copyright 2025 - Melón de Azucar</h3>
     </footer>
 </body>
 </html>

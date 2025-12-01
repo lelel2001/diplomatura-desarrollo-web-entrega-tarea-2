@@ -1,6 +1,7 @@
 //variables
 @use "../utilities/variables" as *;
 /* INFORMACION.HTML - Seccion de Main */
+
 main {
 .container {
     text-align: center;
@@ -15,5 +16,8 @@ main {
     p {
     text-align: center;
         }
+    }
+    a{
+        text-decoration: none;
     }
 }
